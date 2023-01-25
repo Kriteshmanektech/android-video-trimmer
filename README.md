@@ -3,7 +3,8 @@
 [![](https://jitpack.io/v/a914-gowtham/android-video-trimmer.svg)](https://jitpack.io/#a914-gowtham/android-video-trimmer)
 
 # Android-video-trimmer
-
+update point
+add Count timer to select from seekbar
 ##### Helps to trim local videos with many customizations on Android applications using exoplayer2 and FFmpeg [Demo app](https://play.google.com/store/apps/details?id=com.videotrimmer.videotrimmerdemo). 
 
 ![](https://github.com/a914-gowtham/Android-video-trimmer/blob/master/demo.gif)
