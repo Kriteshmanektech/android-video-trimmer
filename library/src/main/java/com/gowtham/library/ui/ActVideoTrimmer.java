@@ -85,7 +85,7 @@ public class ActVideoTrimmer extends LocalizationActivity {
 
     private Uri uri;
 
-    private TextView txtStartDuration, txtEndDuration;
+    private TextView txtStartDuration, txtEndDuration, selectionTimer;
 
     private CrystalRangeSeekbar seekbar;
 
@@ -163,6 +163,7 @@ public class ActVideoTrimmer extends LocalizationActivity {
         txtEndDuration = findViewById(R.id.txt_end_duration);
         seekbarController = findViewById(R.id.seekbar_controller);
         progressBar = findViewById(R.id.progress_circular);
+        selectionTimer = findViewById(R.id.selectionTimer);
         ImageView imageOne = findViewById(R.id.image_one);
         ImageView imageTwo = findViewById(R.id.image_two);
         ImageView imageThree = findViewById(R.id.image_three);
@@ -354,6 +355,7 @@ public class ActVideoTrimmer extends LocalizationActivity {
         seekbar.setVisibility(View.VISIBLE);
         txtStartDuration.setVisibility(View.VISIBLE);
         txtEndDuration.setVisibility(View.VISIBLE);
+         selectionTimer.setVisibility(View.VISIBLE);
 
         seekbarController.setMaxValue(totalDuration).apply();
         seekbar.setMaxValue(totalDuration).apply();
@@ -391,6 +393,7 @@ public class ActVideoTrimmer extends LocalizationActivity {
             }
             lastMinValue = minVal;
             lastMaxValue = maxVal;
+            selectionTimer.setText(TrimmerUtils.formatSeconds(lastMaxValue-lastMinValue));
             txtStartDuration.setText(TrimmerUtils.formatSeconds(minVal));
             txtEndDuration.setText(TrimmerUtils.formatSeconds(maxVal));
             if (trimType == 3)
