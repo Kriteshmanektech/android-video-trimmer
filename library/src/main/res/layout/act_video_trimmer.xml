@@ -16,6 +16,18 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:titleTextColor="@color/colorWhite" />
 
+         <TextView
+            android:id="@+id/selectionTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/time_background"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        
         <RelativeLayout style="@style/VWView">
 
             <com.google.android.exoplayer2.ui.StyledPlayerView
